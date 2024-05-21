@@ -6,6 +6,7 @@
 }
 body{
     color: #ededed;
+    background: #081b29;
 }
 .header{
     position: fixed;
@@ -13,7 +14,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #051129;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,9 +51,10 @@ body{
     justify-content: space-between;
     height: 100vh;
     background-color: black;
-    /* background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat; */
-    /* background-position: cover;
-    background-position: center; */
+     background: url(ashutosh1.jpg ) no-repeat; 
+    background-position: cover;
+    background-position: center; 
+    
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
@@ -134,6 +136,114 @@ body{
     0 0 100px cyan, 0 0 200px cyan;
 
 
+}
+
+.about{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+align-items: center;
+gap: 1.5rem;
+}
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color: #0ef;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+#services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title span{
+    color: #0ef;
+}
+.container{
+    padding: 60px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    border-right: 10px;
+    font-weight: 13px;
+    border-radius: 20px;
+    transition: background 0.5s , transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+                1px 1px 40px #0053b8f7;
+}
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-duration: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef
+}
+.read:hover{
+    box-shadow:  0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.services-list div:hover{
+    transform: translateY(-10px);
 }
 @keyframes slideRight {
     0% {
