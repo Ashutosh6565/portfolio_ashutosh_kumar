@@ -245,15 +245,20 @@ gap: 1.5rem;
 .services-list div:hover{
     transform: translateY(-10px);
 }
-section{
+section.skills-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .container1{
     width: 600px;
     height: 500px;
     padding: 75px 90px;
     margin-left: 120px;
+    flex: 1;
+    margin: 10px;
+    
+    
 }
 .heading1{
     text-align: center;
@@ -395,7 +400,7 @@ section{
 
 .radial-bars .radial-bar .progress-bar{
     stroke-width: 10;
-    stop-color: black;
+    stroke: black;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -442,7 +447,28 @@ section{
     }
 }
 
-
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 700;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
 
 
 
