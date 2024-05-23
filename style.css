@@ -493,7 +493,7 @@ section.skills-section {
     cursor: pointer;
 }
 
-.row img{
+/* .row img{
     width: 100%;
     height: auto;
     background: linear-gradient(rgba(0,0,0,0.1),#0ef);
@@ -508,19 +508,45 @@ section.skills-section {
     justify-content: center;
     text-align: center;
     padding: 0 40px;
-    transition: height 0.5s;
+    transition: transform 0.5s;
+} */
+
+.row img {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0,0,0,0.1),#0ef);
+    border-radius: 8px;
+    transition: transform 0.5s; /* Adjusted transition for smooth scaling effect */
 }
 
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.5s; /* Added transition for opacity */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
 
 .layer h5{
-    color: #000;
+    color: #fff;
     font-size: 20px;
     font-weight: 600;
     margin-top: 15px;
 
 }
 .layer p{
-    color: #000;
+    color: #fff;
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -540,7 +566,7 @@ section.skills-section {
     transform: scale(1.1);
 }
 .row:hover .layer{
-height: 100%;
+ opacity: 1;
 }
 
 
