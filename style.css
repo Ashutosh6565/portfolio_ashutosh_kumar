@@ -52,7 +52,8 @@ body{
     height: 100vh;
     background-color: black;
      background: url(ashutosh1.jpg ) no-repeat; 
-    background-position: cover;
+     background-size: cover;
+    
     background-position: center; 
     
     display: flex;
@@ -180,13 +181,13 @@ gap: 1.5rem;
 .sub-title{
     text-align: center;
     font-size: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 0px;
 }
 .sub-title span{
     color: #0ef;
 }
 .container{
-    padding: 60px;
+    padding: -3px;
 }
 .services-list{
     display: grid;
@@ -215,13 +216,16 @@ gap: 1.5rem;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
+.services-list div img{
+    background-size: cover;
+}
+/* .services-list div a{
     text-decoration: none;
     color: #000000;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
-}
+} */
 .read{
     display: inline-block;
     padding: 12px 28px;
@@ -255,7 +259,7 @@ section.skills-section {
 .container1{
     width: 600px;
     height: auto;
-    padding: 75px 90px;
+    padding: 55px 50px;
     margin-left: 120px;
     flex: 1;
     /* margin: 10px; */
@@ -296,9 +300,7 @@ section.skills-section {
     width: 100%;
     height: 5px;
     background-color: #000000;
-    /* animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left; */
+    
     overflow: hidden;
 }
 @keyframes animate{
@@ -430,22 +432,22 @@ section.skills-section {
 
 @keyframes animate-path1{
     100%{
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 25.1%;
     }
 }
 @keyframes animate-path2{
     100%{
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 75.3%;
     }
 }
 @keyframes animate-path3{
     100%{
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 25.1%;
     }
 }
 @keyframes animate-path4{
     100%{
-        stroke-dashoffset: 75;
+        stroke-dashoffset: 50.2%;
     }
 }
 
@@ -463,7 +465,7 @@ section.skills-section {
     width: 100%;
     position: absolute;
     text-align: center;
-    left: 50%;
+    left: 21%;
     bottom: -5px;
     transform: translateX(-50px);
     font-size: 17px;
@@ -473,14 +475,18 @@ section.skills-section {
 }
 
 .main-text{
-    padding-top: 130px;
-    margin-top: 200px;
+    padding-top: 74px;
+    margin-top: 37px;
 
 }
 .main-text h2{
     font-size: 70px;
     line-height: 1;
     text-align: center;
+    padding-bottom: 94px;
+}
+.main-text span{
+    color: #0ef;
 }
 .portfolio-content{
     display: grid;
@@ -576,7 +582,7 @@ section.skills-section {
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
-    margin-top: 130px;
+    margin-top: 430px;
 }
 .contact-text h2{
     font-size: 90px;
