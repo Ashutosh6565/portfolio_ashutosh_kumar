@@ -1,36 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ashutosh Kumar - Full Stack Developer Portfolio">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            
-            <a href="#skills" style="--i:4">Portfolio</a>
-            <a href="#contact" style="--i:5">Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Ashutosh Kumar</h1>
-            <h3>And I'm a <span class="text"></span></h3>
-            <p>
-                I am a passionate Full-Stack Developer and Web Designer with over a year of experience in creating modern, responsive, and user-friendly websites. My expertise lies in both frontend and backend development, allowing me to build seamless and efficient web applications.<br> I specialize in designing intuitive UI/UX with HTML, CSS, JavaScript, and Tailwind CSS while also ensuring robust backend functionality. My goal is to craft visually appealing and high-performing websites that deliver a smooth user experience. Always eager to learn and improve, I love tackling new challenges and bringing creative ideas to life through code.
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
 
-            </p>
-            <div class="home-sci">
-                <a href="https://www.facebook.com/ashutosh.kumargangwar.7" target="_blank" style="--i:1">
-                    <i class='bx bxl-facebook-square'></i>
-                </a>
+  <!-- Header Section -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#home" style="--i:1" class="active">Home</a></li>
+      <li><a href="#about" style="--i:2">About</a></li>
+      <li><a href="#experience" style="--i:3">Experience</a></li>
+      <li><a href="#skills" style="--i:4">Skills</a></li>
+      <li><a href="#portfolio" style="--i:5">Portfolio</a></li>
+      <li><a href="#contact" style="--i:6">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Ashutosh Kumar</h1>
+      <h3>And I'm a <span class="text"></span></h3>
+      <p>
+        I am a passionate Full-Stack Developer and Web Designer with over a year of experience in creating modern, responsive, and user-friendly websites. My expertise lies in both frontend and backend development, allowing me to build seamless and efficient web applications.
+      </p>
+      <div class="home-sci">
+        <a href="https://www.facebook.com/ashutosh.kumargangwar.7" target="_blank" style="--i:1">
+          <i class='bx bxl-facebook-square'></i>
+        </a>
+        <a href="https://www.instagram.com/ashutosh_kumar17/" target="_blank" style="--i:2">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=7302401472" target="_blank" style="--i:3">
+          <i class='bx bxl-whatsapp'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ashutoshkumar90/" target="_blank" style="--i:4">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="https://github.com/Ashutosh6565" target="_blank" style="--i:5">
+          <i class='bx bxl-github'></i>
+        </a>
+      </div>
+      <a href="https://drive.google.com/file/d/1OkfA8_gTyXo2ESmk1jKWLHWi_IrUVaqB/view" class="btn-box">Download CV</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="ashut2.png" alt="Ashutosh Kumar">
+    </div>
+    <div class="about-text">
+      <h2>About <span>Me</span></h2>
+      <h4>Full Stack Developer</h4>
+      <p>Hello! I'm Ashutosh Kumar, a graduate with a passion for creating innovative and user-friendly web applications. I've honed my skills in full-stack web development, specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js).</p>
+      <p>I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying outdoor activities.</p>
+      <a href="#contact" class="btn-box">Let's Talk</a>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <h2 class="sub-title">My <span>Experience</span></h2>
+    <div class="exp-container">
+      <div class="exp-card">
+        <h3>Frontend Developer</h3>
+        <span class="company">Tech Solutions Inc.</span>
+        <span class="duration">Jan 2022 - Present</span>
+        <ul>
+          <li>Developed responsive web applications using React.js</li>
+          <li>Collaborated with UI/UX designers to implement design systems</li>
+          <li>Optimized web performance leading to 40% faster load times</li>
+          <li>Implemented accessibility standards across all projects</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <h3>Web Development Intern</h3>
+        <span class="company">Digital Creations</span>
+        <span class="duration">Jun 2021 - Dec 2021</span>
+        <ul>
+          <li>Assisted in developing and maintaining company websites</li>
+          <li>Created interactive UI components with JavaScript</li>
+          <li>Performed website testing and debugging</li>
+          <li>Collaborated with senior developers on project tasks</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <h3>Freelance Web Developer</h3>
+        <span class="company">Self-Employed</span>
+        <span class="duration">Mar 2020 - May 2021</span>
+        <ul>
+          <li>Designed and developed websites for small businesses</li>
+          <li>Implemented SEO strategies to improve client visibility</li>
+          <li>Provided website maintenance and support services</li>
+          <li>Managed client relationships and project timelines</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <h2 class="sub-title">My <span>Skills</span></h2>
+    <div class="skills-container">
+      <div class="container1">
+        <h1 class="heading1">Technical Skills</h1>
+        <div class="Technical-bars">
+          <div class="bar">
+            <div class="info">
+              <i style="color: #c95d2e;" class='bx bxl-html5'></i>
+              <span>HTML</span>
+            </div>
+            <div class="progress-line html"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i style="color: #147bbc;" class='bx bxl-css3'></i>
+              <span>CSS</span>
+            </div>
+            <div class="progress-line css"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i style="color: #b0bc1e;" class='bx bxl-javascript'></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="progress-line javascript"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i style="color: #c32ec9;" class='bx bxl-java'></i>
+              <span>Java</span>
+            </div>
+            <div class="progress-line java"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i style="color: #69bcbc;" class='bx bxl-react'></i>
+              <span>React</span>
+            </div>
+            <div class="progress-line react"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i style="color: #69bcbc;" class='bx bxl-react'></i>
+              <span>Angular</span>
+            </div>
+            <div class="progress-line react"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i style="color: #69bcbc;" class='bx bxl-react'></i>
+              <span>Nodejs</span>
+            </div>
+            <div class="progress-line react"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i style="color: #69bcbc;" class='bx bxl-react'></i>
+              <span>Express</span>
+            </div>
+            <div class="progress-line react"><span></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i style="color: #69bcbc;" class='bx bxl-react'></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="progress-line react"><span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="container1">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-bars">
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Creativity</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">85%</div>
+            <div class="text">Communication</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Problem Solving</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">80%</div>
+            <div class="text">Teamwork</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="main-text">
+      <h2>My <span>Projects</span></h2>
+      <div class="portfolio-content" id="projects-container">
+        <!-- Projects dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Contact <span>Me</span></h2>
+      <h4>Let's Work Together</h4>
+      <p>I would be thrilled to collaborate with you on any web development project. If you're interested, please feel free to email me. I'm looking forward to the opportunity to work together.</p>
+      <div class="contact-list">
+        <li><i class='bx bxs-send'></i> thedeveloperashutosh@gmail.com</li>
+        <li><i class='bx bxs-phone'></i> 7302401472</li>
+      </div>
+      <div class="contact-icons">
+        <a href="https://www.facebook.com/ashutosh.kumargangwar.7" target="_blank">
+          <i class='bx bxl-facebook-circle'></i>
+        </a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.instagram.com/ashutosh_kumar17/" target="_blank">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ashutosh-kumar-web-developer/" target="_blank">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Enter Your Name" required>
+        <input type="email" name="email" placeholder="Enter Your Email" required>
+        <input type="text" name="subject" placeholder="Enter Your Subject">
+        <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="send">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Ashutosh Kumar. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
