@@ -93,7 +93,14 @@
 
         // Projects data
         const projects = [
+          
             {
+                title: "E-Commerce Platform",
+                image: "./1.png",
+                description: "A full-stack e-commerce solution with user authentication, product management, and payment integration. Built with MERN stack.",
+                link: "#"
+            },
+              {
                 title: "ScoreBoard",
                 image: "./Scoreboard.png",
                 description: "A simple React-based Score Keeper app to track scores, wickets, and comments in real-time with a dynamic UI. Perfect for learning React fundamentals.",
@@ -105,30 +112,24 @@
                 description: "A Movie App built with React that lets users browse and search for movies with detailed information. The project features a clean UI and modular code.",
                 link: "https://github.com/Ashutosh6565/MovieApp"
             },
-            {
-                title: "E-Commerce Platform",
-                image: "./project3.png",
-                description: "A full-stack e-commerce solution with user authentication, product management, and payment integration. Built with MERN stack.",
-                link: "#"
-            },
-            {
-                title: "Task Management App",
-                image: "https://via.placeholder.com/300x200?text=Task+App",
-                description: "A productivity application for managing tasks with drag-and-drop functionality, categories, and deadline reminders.",
-                link: "#"
-            },
-            {
-                title: "Weather Dashboard",
-                image: "https://via.placeholder.com/300x200?text=Weather+App",
-                description: "Real-time weather application with 5-day forecast, location detection, and interactive charts using weather API.",
-                link: "#"
-            },
-            {
-                title: "Blog Platform",
-                image: "https://via.placeholder.com/300x200?text=Blog+Platform",
-                description: "Content management system for bloggers with rich text editor, categories, tags, and comment functionality.",
-                link: "#"
-            }
+            // {
+            //     title: "Task Management App",
+            //     image: "https://via.placeholder.com/300x200?text=Task+App",
+            //     description: "A productivity application for managing tasks with drag-and-drop functionality, categories, and deadline reminders.",
+            //     link: "#"
+            // },
+            // {
+            //     title: "Weather Dashboard",
+            //     image: "https://via.placeholder.com/300x200?text=Weather+App",
+            //     description: "Real-time weather application with 5-day forecast, location detection, and interactive charts using weather API.",
+            //     link: "#"
+            // },
+            // {
+            //     title: "Blog Platform",
+            //     image: "https://via.placeholder.com/300x200?text=Blog+Platform",
+            //     description: "Content management system for bloggers with rich text editor, categories, tags, and comment functionality.",
+            //     link: "#"
+            // }
         ];
 
         // Render projects
